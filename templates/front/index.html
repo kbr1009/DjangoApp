@@ -7,5 +7,10 @@
   <body>
     <a href="{% url 'front:index'%}">Fuck!</a>
     <h1>現在工事中</h1>
+    <ul>
+      {% for foo in products %}
+      <li>商品名：{{ foo.product_name}}　価格：{{ foo.price }}</li>
+      {% endfor %}
+    </ul>
   </body>
 </html>
