@@ -2,14 +2,16 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>小林のショッピングサイト</title>
+    <title>yamawa foods shop site</title>
   </head>
   <body>
-    <a href="{% url 'front:index'%}">Fuck!</a>
-    <h1>現在工事中</h1>
+    <a href="{% url 'front:index'%}">HOME</a>
+    <h1>株式会社　山和食品</h1>
     <ul>
       {% for foo in products %}
-      <li>商品名：{{ foo.product_name}}　価格：{{ foo.price }}</li>
+      <li>商品名：{{ foo.product_name}}　価格：{{ foo.price }}　
+      </li>
+      <img src='{{ MEDIA_URL }}{{image.picture}}' width=200>
       {% endfor %}
     </ul>
   </body>
