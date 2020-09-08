@@ -6,12 +6,14 @@
   </head>
   <body>
     <a href="{% url 'front:index'%}">HOME</a>
-    <h1>株式会社　山和食品</h1>
+    <h1>
+      <a href="{% url 'front:index'%}">YamawaFoods</a>
+    </h1>
     <ul>
       {% for foo in products %}
-      <li>商品名：{{ foo.product_name}}　価格(税込)：¥{{ foo.price }}
-      </li>
+      <li>{{ foo.product_name}}</li>
       <img src='{{ MEDIA_URL }}{{foo.thumbnail}}' width=250>
+      <li>価格(税込)：¥{{ foo.price }}</li>
       {% endfor %}
     </ul>
   </body>
