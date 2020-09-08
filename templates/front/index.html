@@ -5,14 +5,14 @@
     <title>yamawa foods shop site</title>
   </head>
   <body>
-    <a href="{% url 'front:index'%}">HOME</a>
+    <a href="{% url 'front:index' %}">HOME</a>
     <h1>
-      <a href="{% url 'front:index'%}">YamawaFoods</a>
+      <a href="{% url 'front:index' %}">YamawaFoods</a>
     </h1>
     <ul>
       {% for foo in products %}
       <li>{{ foo.product_name}}</li>
-      <img src='{{ MEDIA_URL }}{{foo.thumbnail}}' width=250>
+      <img src='{{ MEDIA_URL }}{{foo.thumbnail}}' width=200>
       <li>価格(税込)：¥{{ foo.price }}</li>
       {% endfor %}
     </ul>
