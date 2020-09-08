@@ -9,9 +9,9 @@
     <h1>株式会社　山和食品</h1>
     <ul>
       {% for foo in products %}
-      <li>商品名：{{ foo.product_name}}　価格：{{ foo.price }}　
+      <li>商品名：{{ foo.product_name}}　価格(税込)：¥{{ foo.price }}
       </li>
-      <img src='{{ MEDIA_URL }}{{image.picture}}' width=200>
+      <img src='{{ MEDIA_URL }}{{foo.thumbnail}}' width=250>
       {% endfor %}
     </ul>
   </body>

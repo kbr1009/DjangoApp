@@ -64,6 +64,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media', # https://qiita.com/j54854/items/1f0560142e39d888251c　を参照
             ],
         },
     },
@@ -126,6 +127,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_DIRS = [os.path.join(BASE_DIR,'static')]
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) # https://qiita.com/j54854/items/1f0560142e39d888251c　を参照
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
