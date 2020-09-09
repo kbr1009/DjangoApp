@@ -1,20 +1,13 @@
-<!DOCTYPE html>
-<html lang="ja" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>yamawa foods shop site</title>
-  </head>
-  <body>
-    <a href="{% url 'front:index' %}">HOME</a>
-    <h1>
-      <a href="{% url 'front:index' %}">YamawaFoods</a>
-    </h1>
-    <ul>
-      {% for i in product_list %}
-      <li>{{ i.product_name}}</li>
-      <img src='{{ MEDIA_URL }}{{i.thumbnail}}' width=200>
-      <li>価格(税込)：¥{{ i.price }}</li>
-      {% endfor %}
-    </ul>
-  </body>
-</html>
+{% extends 'base.html' %}
+
+{% block contents %}
+<ul>
+  {% for i in product_list %}
+  <a href="{% url 'front:detail' i.pk %}">
+    <li>{{ i.product_name}}</li>
+    <img src='{{ MEDIA_URL }}{{i.thumbnail}}' width=200>
+  </a>
+  <li>価格(税込)：¥{{ i.price }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}

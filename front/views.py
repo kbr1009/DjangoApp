@@ -13,3 +13,8 @@ from .models import Product
 class IndexView(generic.ListView): #Listviewを使用した時
     template_name = 'front/index.html'
     model = Product
+
+
+class ProductsDetail(generic.DetailView):
+    template_name = 'front/detail.html'
+    model = Product

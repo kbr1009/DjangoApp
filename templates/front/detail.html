@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block contents %}
+<a href="{% url 'front:index' %}">homeに戻る</a>
+    {{product.product_name}}
+
+    <img src='{{ MEDIA_URL }}{{product.thumbnail}}' width=300>
+    <li>価格(税込)：¥{{ product.price }}</li>
+
+{% endblock %}
