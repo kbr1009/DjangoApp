@@ -1,7 +1,6 @@
 from django.shortcuts import render
-
+from django.views import generic
 # Create your views here.
 
-def index(request):
-    return render(request,'front/index.html')
-    
+class IndexView(generic.TemplateView):
+    template_name = 'front/index.html'
