@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>小林のショッピングサイト</title>
-  </head>
-  <body>
-    <a href="{% url 'front:index'%}">Fuck!</a>
-    <h1>現在工事中</h1>
-  </body>
-</html>
+{% extends 'base.html' %}
+
+{% block contents %}
+<ul>
+  {% for i in product_list %}
+  <a href="{% url 'front:detail' i.pk %}">
+    <img src='{{ MEDIA_URL }}{{i.thumbnail}}' width=200>
+    <li>{{ i.product_name}}</li>
+  </a>
+  <li>価格(税込) ¥{{ i.price }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}

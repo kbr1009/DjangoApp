@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block contents %}
+    {{product.product_name}}
+
+    <img src='{{ MEDIA_URL }}{{product.thumbnail}}' width=400>
+    <li>価格(税込) ¥{{ product.price }}</li>
+    {{product.description}}
+{% endblock %}
