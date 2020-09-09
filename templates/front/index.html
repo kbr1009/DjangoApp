@@ -4,8 +4,8 @@
 <ul>
   {% for i in product_list %}
   <a href="{% url 'front:detail' i.pk %}">
-    <li>{{ i.product_name}}</li>
     <img src='{{ MEDIA_URL }}{{i.thumbnail}}' width=200>
+    <li>{{ i.product_name}}</li>
   </a>
   <li>価格(税込)：¥{{ i.price }}</li>
   {% endfor %}
