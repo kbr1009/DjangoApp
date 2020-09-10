@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *.json
 
 .DS_Store
@@ -5,3 +6,10 @@
 tnumbnails/
 
 __pycache__
+=======
+secrets.json
+
+__pycache__
+
+.DS_Store
+>>>>>>> branchH_add_json
