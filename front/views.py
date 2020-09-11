@@ -3,7 +3,7 @@ from django.views import generic
 from .models import Product
 # Create your views here.
 
-#class IndexView(generic.TemplateView):
+#class IndexView(generic.TemplateView): # # templateviewはデータベースがない時に使用
 #    template_name = 'front/index.html'
 
 #    def get(self, request, *args, **kwargs):
