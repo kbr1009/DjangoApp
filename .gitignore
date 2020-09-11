@@ -1,4 +1,4 @@
-secrets.json
+*.json
 
 __pycache__
 
