@@ -3172,13 +3172,13 @@ textarea.input-lg, .form-horizontal .form-group-lg textarea.form-control, .form-
 }
 
 .btn-primary, .quick-cart-btn.add-to-cart, .navbar-default .btn-signup, .footer__grid .btn-signup, .purchase-btn {
-    color: #fed7ea;
+    color: #FFFF99;
     background-color: #202020;
     border-color:#131313
 }
 
 .btn-primary:hover, .quick-cart-btn.add-to-cart:hover, .navbar-default .btn-signup:hover, .footer__grid .btn-signup:hover, .purchase-btn:hover, .btn-primary:focus, .quick-cart-btn.add-to-cart:focus, .navbar-default .btn-signup:focus, .footer__grid .btn-signup:focus, .purchase-btn:focus, .btn-primary:active, .quick-cart-btn.add-to-cart:active, .navbar-default .btn-signup:active, .footer__grid .btn-signup:active, .purchase-btn:active, .btn-primary.active, .active.quick-cart-btn.add-to-cart, .navbar-default .active.btn-signup, .footer__grid .active.btn-signup, .active.purchase-btn, .open > .btn-primary.dropdown-toggle, .open > .dropdown-toggle.quick-cart-btn.add-to-cart, .navbar-default .open > .dropdown-toggle.btn-signup, .footer__grid .open > .dropdown-toggle.btn-signup, .open > .dropdown-toggle.purchase-btn {
-    color: #fed7ea;
+    color: #FFFF99;
     background-color: #070707;
     border-color:#000
 }
@@ -3302,13 +3302,13 @@ textarea.input-lg, .form-horizontal .form-group-lg textarea.form-control, .form-
 }
 
 .btn-main {
-    color: #fed7ea;
+    color: #FFFF99;
     background-color: #444349;
     border-color:#444349
 }
 
 .btn-main:hover, .btn-main:focus, .btn-main:active, .btn-main.active, .open > .btn-main.dropdown-toggle {
-    color: #fed7ea;
+    color: #FFFF99;
     background-color: #2b2b2e;
     border-color:#262629
 }
@@ -3497,7 +3497,7 @@ tbody.collapse.in {
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover:not(.ajax-cart-btn), .dropdown-menu > .active > a:focus:not(.ajax-cart-btn) {
     text-decoration: none;
     color: #ffffff;
-    background-color: #fed7ea;
+    background-color: #FFFF99;
     text-decoration: none;
     outline:0
 }
@@ -4401,7 +4401,7 @@ tbody.collapse.in {
 }
 
 .navbar-default {
-    background-color: #fed7ea;
+    background-color: #FFFF99;
     border-color:#fdbedd
 }
 
@@ -7122,7 +7122,7 @@ dt {
 }
 
 #navbar-main {
-    background-color: #fed7ea;
+    background-color: #FFFF99;
     border-color:#fdbedd
 }
 
@@ -7144,7 +7144,7 @@ dt {
 }
 
 #navbar-main .dropdown-menu, #navbar-main .submenu > .nav {
-    background-color: #fed7ea;
+    background-color: #FFFF99;
     color:#ffffff
 }
 
