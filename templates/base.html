@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -33,15 +34,15 @@
 
 
 
-    <link href="bass.scss.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="custom.scss.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="front-awesome.min.css" rel="stylesheet">
+    <link href="{% static 'css/bass.scss.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <link href="{% static 'css/custom.scss.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <link href="{% static 'css/front-awesome.min.css' %}" rel="stylesheet">
 
 
-  <link href="1.css" rel="stylesheet">
+  <link href="{% static 'css/1.css' %}" rel="stylesheet">
 
 
-    <link href="2.css" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/2.css' %}" rel="stylesheet" type="text/css">
 
 
 <!--<meta name="google-site-verification" content="-xRHu6iHTEJFYoIBmKMN9IsqQ3ZwaQkbYhqjdJwCiZM">-->
@@ -102,7 +103,7 @@
       </button>
       <a class="navbar-brand navbar-brand-img" href="{% url 'front:index' %}">
       <!--  https://cdn.shopify.com/s/files/1/0268/7415/0947/t/6/assets/logo-image-file.png?v=2742870924622980794 -->
-  <img src="yamawa_logo.png" alt="会社のロゴ">
+  <img src="{% static 'image/yamawa_logo.png' %}" alt="会社のロゴ">
 </a>
     </div>
 
@@ -167,7 +168,7 @@
       <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
     </span>
   </div>
-</form></li>
+</form>
 
 
 </ul>
