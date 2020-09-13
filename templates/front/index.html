@@ -1,13 +1,63 @@
 {% extends 'base.html' %}
-
 {% block contents %}
-<ul>
-  {% for i in product_list %}
-  <a href="{% url 'front:detail' i.pk %}">
-    <img src='{{ MEDIA_URL }}{{i.thumbnail}}' width=200>
-    <li>{{ i.product_name}}</li>
-  </a>
-  <li>価格(税込) ¥{{ i.price }}</li>
-  {% endfor %}
-</ul>
+{% for i in product_list %}
+<section id="product-list" class="section-wrap">
+
+
+<div class="container">
+
+<div class="row">
+	<div class="main-content col-xs-12">
+
+		<h2 class="page-header" id="products-title">{{ i.product_name}}</h2>
+		<div class="row">
+
+		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tag-drop-6 tag-mb-invisible tag-tickets-pre-order "  data-variants="default-title " data-alpha="Tickets To My Downfall CD - Autographed (pre order)" data-price="1800">
+  <div class="product-thumbnail">
+    <div class="thumbnail-image">
+
+<a href="products/tickets-to-my-downfall-cd-autographed.html" title=""><img src='{{ MEDIA_URL }}{{i.thumbnail}}' width=200></a>
+
+    </div>
+    <a href="products/tickets-to-my-downfall-cd-autographed.html" class="caption clearfix">
+
+      <h4 class="product-title">{{ i.product_name}}</h4>
+
+      <div class="shopify-product-reviews-badge" data-id="4631647813667"></div>
+
+      <div class="product-price">
+
+        <span class="money" itemprop="price">¥{{ i.price }}</span>
+
+
+        <div class="product-labels ">
+
+</div>
+      </div>
+
+    </a>
+
+    <div class="quick-cart">
+      <div class="quick-cart-btn-wrapper">
+        <a href="products/tickets-to-my-downfall-cd-autographed.html" class="quick-cart-btn view">
+
+          View product
+
+        </a>
+      </div>
+      <div class="quick-cart-btn-wrapper">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+</div>
+
+</div>
+
+	</div>
+</section>
+{% endfor %}
 {% endblock %}
