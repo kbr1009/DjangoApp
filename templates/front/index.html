@@ -1,13 +1,28 @@
 {% extends 'base.html' %}
 
 {% block contents %}
-<ul>
+<style >
+.flex-container {
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+justify-content: space-around;
+}
+
+.flex-container{
+margin:100 0px 0px 100;
+}
+</style>
+
+<div class="flex-container">
   {% for i in product_list %}
   <a href="{% url 'front:detail' i.pk %}">
     <img src='{{ MEDIA_URL }}{{i.thumbnail}}' width=200>
     <li>{{ i.product_name}}</li>
+		<li>¥{{ i.price }}</li>
   </a>
-  <li>価格(税込) ¥{{ i.price }}</li>
   {% endfor %}
-</ul>
+</div>
 {% endblock %}
+<!--justify-content: space-around;
+justify-content: flex-endcenter;-->
